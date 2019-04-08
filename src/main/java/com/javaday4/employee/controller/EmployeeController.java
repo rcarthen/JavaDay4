@@ -12,7 +12,8 @@ public class EmployeeController {
 	@Autowired
 private EmployeeService employeeService;
 
-//Display all employees
+//Display all employees///format the output ...using the models///create in a formated way not just the json
+	
 	@GetMapping("/employees")
 public List<Employee> reteriveEmployeeList(){
 		return employeeService.retrieveAllEmployees();
